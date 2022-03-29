@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./Index.css" rel="stylesheet" />
+    <title>Form</title>
+    <script src="Index.js" defer></script>
+  </head>
+  <body class="text-center">
+    <header>
+      <h1>This is a Form</h1>
+    </header>
+    <section>
+      <form>
+        <div>
+          <label for="email">Email:&nbsp;</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="Password">Password:&nbsp;</label>
+          <input
+            type="Password"
+            id="password"
+            name="Password"
+            minlength="8"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <div class="center">
+            <select>
+              <option value="1">Gender</option>
+              <option value="1">Male</option>
+              <option value="1">Female</option>
+              <option value="1">Otherr</option>
+            </select>
+          </div>
+          <div>
+            <p>Role:</p>
+            <input type="radio" id="html" name="fav_language" value="admin" />
+            <label for="html">Admin</label>
+            <input type="radio" id="css" name="fav_language" value="user" />
+            <label for="css">User</label>
+          </div>
+        </div>
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
